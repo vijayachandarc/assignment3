@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-assignment3';
+  displayStatus = false;
+  logArray = [];
+
+  updateDisplayStatus() {
+    this.displayStatus = !this.displayStatus;
+    this.logArray.push(new Date());
+  }
 }
